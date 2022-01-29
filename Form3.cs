@@ -24,7 +24,8 @@ namespace VPN_Unlimited_Setup
 
         private void CheckBoxFolder_CheckedChanged(object sender, EventArgs e)
         {
-            FolderName.Enabled = false;
+            if (FolderName.Enabled == false) FolderName.Enabled = true;
+            else FolderName.Enabled = false;
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
